@@ -15,7 +15,7 @@ cnpm install vue-cli -g
 # 创建webpack模板项目文件
 vue init webpack vueexpress
 
-# 如上报错尝试使用如下命令安装,按照提示下一步操作，完成后按提示操作命令
+# 如上命令执行报错，请尝试使用如下命令安装,按照提示下一步操作，完成后按提示操作命令
 vue-init webpack vueexpress
 
 # 安装相关依赖包（如果上述命令已安装node_modules依赖包，此步骤可省略）
