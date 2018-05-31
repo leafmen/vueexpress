@@ -53,22 +53,34 @@ npm install body-parser --save
 # 在server文件夹目录下新建index.js文件，编写启动代码
 
 const express = require('express');
+
 const fs = require('fs');
+
 const path = require('path');
+
 const bodyParser = require('body-parser');
+
 const app = express();
+
 app.use(bodyParser.json());
+
 app.use(bodyParser.urlencoded({ extended: false }));
+
 
 app.use(express.static(path.resolve(__dirname, '../dist')));
 
 app.get('*', function (req, res) {
+
     const html = fs.readFileSync(path.resolve(__dirname, '../dist/index.html'), 'utf-8');
+    
     res.send(html);
+    
 });
 
 app.listen(8081, function () {
+
     console.log('success listen...8081');
+    
 });
 
 
