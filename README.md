@@ -1,6 +1,6 @@
 # vueexpress
 
-> A Vue.js project
+vue+express 项目案例
 
 ## 环境搭建说明
 
@@ -9,6 +9,7 @@ npm install vue-cli -g
 
 # 或使用淘宝镜像安装
 npm config set registry https://registry.npm.taobao.org
+
 cnpm install vue-cli -g
 
 # 创建webpack模板项目文件
